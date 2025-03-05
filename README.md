@@ -1,59 +1,140 @@
-# PaperjsProject
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+# 📌 Paper.js Angular Projesi
 
-## Development server
+Bu proje, **Angular** ve **Paper.js** kullanarak dinamik bir çizim arayüzü sağlar. Kullanıcılar, genişlik, yükseklik, dikey/yatay kayıt sayısı ve profil genişliği gibi parametreleri girerek **çizimi anında güncelleyebilir**.
 
-To start a local development server, run:
+---
 
-```bash
+## 🚀 **Kurulum ve Çalıştırma Adımları**
+
+### **1️⃣ Bağımlılıkları Kurun**
+Öncelikle, projenin çalışması için **Node.js** ve **Angular CLI**'ın yüklü olması gerekir.
+
+#### **🔹 Node.js Kontrolü**
+Node.js yüklü olup olmadığını kontrol etmek için terminale şunu yazın:
+sh
+node -v
+
+Eğer yüklü değilse, [Node.js resmi web sitesinden](https://nodejs.org/) en güncel sürümü indirip yükleyin.
+
+#### **🔹 Angular CLI Kurulumu**
+Angular CLI yüklü olup olmadığını kontrol etmek için:
+sh
+ng version
+
+Eğer Angular CLI yüklü değilse, şu komutla yükleyebilirsiniz:
+sh
+npm install -g @angular/cli
+
+---
+
+### **2️⃣ Projeyi Klonlayın**
+GitHub'daki projeyi yerel makinenize indirmek için:
+sh
+git clone https://github.com/KULLANICI_ADINIZ/paperjs-project.git
+
+Ardından proje klasörüne girin:
+sh
+cd paperjs-project
+
+---
+
+### **3️⃣ Bağımlılıkları Yükleyin**
+Projenin bağımlılıklarını yüklemek için aşağıdaki komutu çalıştırın:
+
+sh
+npm install
+
+Bu işlem, `package.json` içinde belirtilen tüm bağımlılıkları yükleyecektir.
+
+---
+
+### **4️⃣ Projeyi Çalıştırın**
+Geliştirme ortamında projeyi başlatmak için:
+
+sh
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Tarayıcıda aşağıdaki adrese giderek projeyi görebilirsiniz:
 
-## Code scaffolding
+sh
+http://localhost:4200/
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🔧 **Proje Yapısı**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+paperjs-project
+│── src/
+│   ├── app/
+│   │   ├── components/drawing/      # Paper.js çizim bileşeni
+│   │   │   ├── drawing.component.ts  # Ana bileşen
+│   │   │   ├── drawing.component.html # Çizim arayüzü
+│   │   │   ├── drawing.component.css  # Stil dosyası
+│   │── app.component.ts         # Ana Angular bileşeni
+│   │── app.module.ts            # Angular modülü
+│── assets/                      # Statik dosyalar
+│── package.json                  # Bağımlılıkları içerir
+│── angular.json                   # Angular yapılandırma dosyası
+│── README.md                      # Bu doküman
 
-```bash
-ng generate --help
-```
 
-## Building
+---
 
-To build the project run:
+## 📦 **Bağımlılıklar**
+Bu proje aşağıdaki kütüphaneleri kullanır:
 
-```bash
-ng build
-```
+| Bağımlılık | Açıklama |
+|------------|----------|
+| **Angular** | Web uygulamaları geliştirmek için framework |
+| **Paper.js** | Canvas üzerinde vektörel çizim yapmak için kütüphane |
+| **TypeScript** | JavaScript'in güçlü bir superset versiyonu |
+| **Bootstrap** | Daha iyi stil için |
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Paper.js’yi projeye eklemek için:
+sh
+npm install paper
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Eğer Paper.js import hatası alırsanız, şu şekilde import ettiğinizden emin olun:
 
-```bash
-ng test
-```
+ts
+import paper from 'paper';
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 💡 **Özellikler**
+✅ Kullanıcı dostu **kontroller** ile parametre girişi  
+✅ **Paper.js entegrasyonu** sayesinde anlık çizim güncellenmesi  
+✅ **Dikey ve yatay kayıt ekleme** seçenekleri  
+✅ **Angular Standalone Components** kullanımı  
+✅ Responsive tasarım  
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🚀 **Şimdi projeyi çalıştırabilir ve Paper.js ile interaktif çizimler yapabilirsiniz!**  
+Eğer sorularınız varsa, GitHub **Issues** sekmesinden veya buradan bana yazabilirsiniz. 😊
+
+
+---
+
+## **📌 README.md Dosyasını Projeye Ekleme**
+Eğer dosyayı manuel olarak oluşturmak istersen:
+
+1. **Proje klasörüne gidin** (`cd paperjs-project`).
+2. **Yeni bir `README.md` dosyası oluşturun:**
+   sh
+   touch README.md
+   
+   _(Windows için: `echo > README.md` komutunu kullanabilirsiniz.)_
+3. **Dosyanın içine yukarıdaki metni yapıştırın.**
+4. **GitHub’a yüklemek için:**
+   sh
+   git add README.md
+   git commit -m "README.md eklendi"
+   git push origin main
+   
+
+---
