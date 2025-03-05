@@ -76,12 +76,6 @@ Paper.js’yi projeye eklemek için:
 
 npm install paper
 
-
-Eğer Paper.js import hatası alırsanız, şu şekilde import ettiğinizden emin olun:
-
-ts
-import paper from 'paper';
-
 ---
 
 ## 💡 **Özellikler**
