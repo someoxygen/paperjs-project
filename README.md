@@ -31,7 +31,7 @@ npm install -g @angular/cli
 ### **2️⃣ Projeyi Klonlayın**
 GitHub'daki projeyi yerel makinenize indirmek için:
 sh
-git clone https://github.com/KULLANICI_ADINIZ/paperjs-project.git
+git clone https://github.com/someoxygen/paperjs-project.git
 
 Ardından proje klasörüne girin:
 sh
