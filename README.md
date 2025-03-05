@@ -30,11 +30,11 @@ npm install -g @angular/cli
 
 ### **2️⃣ Projeyi Klonlayın**
 GitHub'daki projeyi yerel makinenize indirmek için:
-sh
+
 git clone https://github.com/someoxygen/paperjs-project.git
 
 Ardından proje klasörüne girin:
-sh
+
 cd paperjs-project
 
 ---
@@ -42,7 +42,7 @@ cd paperjs-project
 ### **3️⃣ Bağımlılıkları Yükleyin**
 Projenin bağımlılıklarını yüklemek için aşağıdaki komutu çalıştırın:
 
-sh
+
 npm install
 
 Bu işlem, `package.json` içinde belirtilen tüm bağımlılıkları yükleyecektir.
@@ -52,7 +52,7 @@ Bu işlem, `package.json` içinde belirtilen tüm bağımlılıkları yükleyece
 ### **4️⃣ Projeyi Çalıştırın**
 Geliştirme ortamında projeyi başlatmak için:
 
-sh
+
 ng serve
 
 Tarayıcıda aşağıdaki adrese giderek projeyi görebilirsiniz:
@@ -73,7 +73,7 @@ Bu proje aşağıdaki kütüphaneleri kullanır:
 | **Bootstrap** | Daha iyi stil için |
 
 Paper.js’yi projeye eklemek için:
-sh
+
 npm install paper
 
 
@@ -81,7 +81,6 @@ Eğer Paper.js import hatası alırsanız, şu şekilde import ettiğinizden emi
 
 ts
 import paper from 'paper';
-
 
 ---
 
