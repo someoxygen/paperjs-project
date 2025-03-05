@@ -12,18 +12,18 @@ Bu proje, **Angular** ve **Paper.js** kullanarak dinamik bir çizim arayüzü sa
 
 #### **🔹 Node.js Kontrolü**
 Node.js yüklü olup olmadığını kontrol etmek için terminale şunu yazın:
-sh
+
 node -v
 
 Eğer yüklü değilse, [Node.js resmi web sitesinden](https://nodejs.org/) en güncel sürümü indirip yükleyin.
 
 #### **🔹 Angular CLI Kurulumu**
 Angular CLI yüklü olup olmadığını kontrol etmek için:
-sh
+
 ng version
 
 Eğer Angular CLI yüklü değilse, şu komutla yükleyebilirsiniz:
-sh
+
 npm install -g @angular/cli
 
 ---
@@ -57,27 +57,8 @@ ng serve
 
 Tarayıcıda aşağıdaki adrese giderek projeyi görebilirsiniz:
 
-sh
+
 http://localhost:4200/
-
----
-
-## 🔧 **Proje Yapısı**
-
-paperjs-project
-│── src/
-│   ├── app/
-│   │   ├── components/drawing/      # Paper.js çizim bileşeni
-│   │   │   ├── drawing.component.ts  # Ana bileşen
-│   │   │   ├── drawing.component.html # Çizim arayüzü
-│   │   │   ├── drawing.component.css  # Stil dosyası
-│   │── app.component.ts         # Ana Angular bileşeni
-│   │── app.module.ts            # Angular modülü
-│── assets/                      # Statik dosyalar
-│── package.json                  # Bağımlılıkları içerir
-│── angular.json                   # Angular yapılandırma dosyası
-│── README.md                      # Bu doküman
-
 
 ---
 
@@ -105,36 +86,9 @@ import paper from 'paper';
 ---
 
 ## 💡 **Özellikler**
-✅ Kullanıcı dostu **kontroller** ile parametre girişi  
+✅ Kullanıcı dostu **controller** ile parametre girişi  
 ✅ **Paper.js entegrasyonu** sayesinde anlık çizim güncellenmesi  
 ✅ **Dikey ve yatay kayıt ekleme** seçenekleri  
 ✅ **Angular Standalone Components** kullanımı  
 ✅ Responsive tasarım  
 
----
-
-
-🚀 **Şimdi projeyi çalıştırabilir ve Paper.js ile interaktif çizimler yapabilirsiniz!**  
-Eğer sorularınız varsa, GitHub **Issues** sekmesinden veya buradan bana yazabilirsiniz. 😊
-
-
----
-
-## **📌 README.md Dosyasını Projeye Ekleme**
-Eğer dosyayı manuel olarak oluşturmak istersen:
-
-1. **Proje klasörüne gidin** (`cd paperjs-project`).
-2. **Yeni bir `README.md` dosyası oluşturun:**
-   sh
-   touch README.md
-   
-   _(Windows için: `echo > README.md` komutunu kullanabilirsiniz.)_
-3. **Dosyanın içine yukarıdaki metni yapıştırın.**
-4. **GitHub’a yüklemek için:**
-   sh
-   git add README.md
-   git commit -m "README.md eklendi"
-   git push origin main
-   
-
----
